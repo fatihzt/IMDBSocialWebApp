@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "DrLLkRvjkw7vTzVDeAfM6GdUbT6KJJHep/nsJLiMAb0=",
+  "Source": "IMDBSWA.Api",
+  "BasePath": "_content/IMDBSWA.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,12 @@
+C:\Users\USER\source\repos\src\IMDBSocialWebApp\IMDBSWA\bin\Debug\net6.0\IMDBSWA.Entities.deps.json
+C:\Users\USER\source\repos\src\IMDBSocialWebApp\IMDBSWA\bin\Debug\net6.0\IMDBSWA.Entities.dll
+C:\Users\USER\source\repos\src\IMDBSocialWebApp\IMDBSWA\bin\Debug\net6.0\IMDBSWA.Entities.pdb
+C:\Users\USER\source\repos\src\IMDBSocialWebApp\IMDBSWA\obj\Debug\net6.0\IMDBSWA.Entities.csproj.AssemblyReference.cache
+C:\Users\USER\source\repos\src\IMDBSocialWebApp\IMDBSWA\obj\Debug\net6.0\IMDBSWA.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\source\repos\src\IMDBSocialWebApp\IMDBSWA\obj\Debug\net6.0\IMDBSWA.Entities.AssemblyInfoInputs.cache
+C:\Users\USER\source\repos\src\IMDBSocialWebApp\IMDBSWA\obj\Debug\net6.0\IMDBSWA.Entities.AssemblyInfo.cs
+C:\Users\USER\source\repos\src\IMDBSocialWebApp\IMDBSWA\obj\Debug\net6.0\IMDBSWA.Entities.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\src\IMDBSocialWebApp\IMDBSWA\obj\Debug\net6.0\IMDBSWA.Entities.dll
+C:\Users\USER\source\repos\src\IMDBSocialWebApp\IMDBSWA\obj\Debug\net6.0\refint\IMDBSWA.Entities.dll
+C:\Users\USER\source\repos\src\IMDBSocialWebApp\IMDBSWA\obj\Debug\net6.0\IMDBSWA.Entities.pdb
+C:\Users\USER\source\repos\src\IMDBSocialWebApp\IMDBSWA\obj\Debug\net6.0\ref\IMDBSWA.Entities.dll
