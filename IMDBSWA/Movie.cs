@@ -10,7 +10,7 @@ using TMDbLib.Objects.General;
 
 namespace IMDBSWA.Entities
 {
-    public class Move
+    public class Movie
     {
         [Key,DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }

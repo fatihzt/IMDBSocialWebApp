@@ -64,3 +64,6 @@ C:\Users\USER\source\repos\src\IMDBSocialWebApp\IMDBSWA.Api\bin\Debug\net6.0\IMD
 C:\Users\USER\source\repos\src\IMDBSocialWebApp\IMDBSWA.Api\bin\Debug\net6.0\IMDBSWA.Core.dll
 C:\Users\USER\source\repos\src\IMDBSocialWebApp\IMDBSWA.Api\bin\Debug\net6.0\IMDBSWA.Business.pdb
 C:\Users\USER\source\repos\src\IMDBSocialWebApp\IMDBSWA.Api\bin\Debug\net6.0\IMDBSWA.Core.pdb
+C:\Users\USER\source\repos\src\IMDBSocialWebApp\IMDBSWA.Api\bin\Debug\net6.0\Humanizer.dll
+C:\Users\USER\source\repos\src\IMDBSocialWebApp\IMDBSWA.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\USER\source\repos\src\IMDBSocialWebApp\IMDBSWA.Api\obj\Debug\net6.0\IMDBSWA.Api.MvcApplicationPartsAssemblyInfo.cs

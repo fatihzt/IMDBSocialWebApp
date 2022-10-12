@@ -19,27 +19,27 @@ namespace IMDBSWA.Business.Concrete
         {
             _movie= movie;
         }
-        public int Add(Move entity)
+        public int Add(Movie entity)
+        {
+            return _movie.Add(entity);
+        }
+
+        public bool Delete(Movie entity)
         {
             throw new NotImplementedException();
         }
 
-        public bool Delete(Move entity)
+        public Movie Get(Expression<Func<Movie, bool>> filter = null, Func<IQueryable<Movie>, IIncludableQueryable<Movie, object>> includesPath = null)
+        {
+            return _movie.Get(filter, includesPath);
+        }
+
+        public List<Movie> GetAll(Expression<Func<Movie, bool>> filter = null, Func<IQueryable<Movie>, IIncludableQueryable<Movie, object>> includesPath = null)
         {
             throw new NotImplementedException();
         }
 
-        public Move Get(Expression<Func<Move, bool>> filter = null, Func<IQueryable<Move>, IIncludableQueryable<Move, object>> includesPath = null)
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<Move> GetAll(Expression<Func<Move, bool>> filter = null, Func<IQueryable<Move>, IIncludableQueryable<Move, object>> includesPath = null)
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool Update(Move entity)
+        public bool Update(Movie entity)
         {
             throw new NotImplementedException();
         }

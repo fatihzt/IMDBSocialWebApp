@@ -1,9 +1,12 @@
-﻿using IMDBSWA.Business.Request.Movie;
+﻿using IMDBSWA.Business.Abstract;
+using IMDBSWA.Business.Request.Movie;
+using IMDBSWA.Core.Api.key;
 using IMDBSWA.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Net.WebSockets;
 using TMDbLib.Client;
+using TMDbLib.Objects.Movies;
 
 namespace IMDBSWA.Api.Controllers
 {
@@ -11,7 +14,14 @@ namespace IMDBSWA.Api.Controllers
     [ApiController]
     public class MovieController : ControllerBase
     {
-        private readonly TMDbClient client = new TMDbClient("2954778739480995cf5e744265900647");
+        private readonly IMovieService _movieService;
+
+        public MovieController(IMovieService movieService)
+        {
+            _movieService = movieService;
+        }
+        /*private readonly TMDbClient client = new TMDbClient("2954778739480995cf5e744265900647");*/
+        /*private readonly TMDbClient client = Apikey.GetTMDbClient();
         [HttpGet("idyegöre/movieId")]
         public async Task<MovieCreateRequest> GetMovie(int movieId)
         {
@@ -25,17 +35,19 @@ namespace IMDBSWA.Api.Controllers
                 ReleaseDate=searchMovieById.ReleaseDate,
             };
             return movie;
-        }
-        [HttpPost]
-        public async Task<List<MovieCreateRequest>> GetMovies([FromQuery] int[] movieIds)
+        }*/
+
+        /*[HttpGet("{id}")]
+        public IActionResult GetById(int id)
         {
-            var movieList = new List<MovieCreateRequest>();
-            foreach (var movieId in movieIds)
-            {
-                var movie = await GetMovie(movieId);
-                movieList.Add(movie);
-            }
-            return movieList;
-        }
+            var result=_movieService.Get(m=>m.MovieId == id);
+            return Ok(result);
+        }*/
+        
+        //[HttpPost]
+        //public IActionResult Post([FromBody] MovieCreateRequest dto)
+        //{
+        //    Movie entity = new() {  }
+        //}
     }
 }

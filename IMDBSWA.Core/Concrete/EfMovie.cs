@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace IMDBSWA.Core.Concrete
 {
-    public class EfMovie:EfEntityRepositoryBase<Move,DataBaseContext>,IMovie
+    public class EfMovie:EfEntityRepositoryBase<Movie,DataBaseContext>,IMovie
     {
     }
 }

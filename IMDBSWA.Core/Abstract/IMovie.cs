@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace IMDBSWA.Core.Abstract
 {
-    public interface IMovie:IEntityRepository<Move>
+    public interface IMovie:IEntityRepository<Movie>
     {
     }
 }
