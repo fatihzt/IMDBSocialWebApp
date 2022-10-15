@@ -1,0 +1,16 @@
+services:
+  imdbswa.api:
+    build:
+      context: C:\Users\USER\source\repos\src\IMDBSocialWebApp
+      dockerfile: IMDBSWA.Api/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: imdbswaapi
+    ports:
+    - target: 80
+    - target: 443
+    volumes:
+    - C:\Users\USER\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\USER\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+version: '3.4'

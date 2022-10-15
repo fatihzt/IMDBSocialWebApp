@@ -13,7 +13,7 @@ namespace IMDBSWA.Entities
     public class Movie
     {
         [Key,DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id { get; set; }
+        public int? Id { get; set; }
         public int MovieId { get; set; }
         public string OriginalTitle { get; set; }
         public string OriginalLanguage { get; set; }

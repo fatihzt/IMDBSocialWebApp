@@ -26,7 +26,7 @@ namespace IMDBSWA.Business.Concrete
 
         public bool Delete(Movie entity)
         {
-            throw new NotImplementedException();
+            return _movie.Delete(entity);
         }
 
         public Movie Get(Expression<Func<Movie, bool>> filter = null, Func<IQueryable<Movie>, IIncludableQueryable<Movie, object>> includesPath = null)
@@ -36,12 +36,12 @@ namespace IMDBSWA.Business.Concrete
 
         public List<Movie> GetAll(Expression<Func<Movie, bool>> filter = null, Func<IQueryable<Movie>, IIncludableQueryable<Movie, object>> includesPath = null)
         {
-            throw new NotImplementedException();
+            return _movie.GetAll(filter, includesPath);
         }
 
         public bool Update(Movie entity)
         {
-            throw new NotImplementedException();
+            return _movie.Update(entity);
         }
     }
 }
