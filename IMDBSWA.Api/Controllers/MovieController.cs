@@ -63,17 +63,29 @@ namespace IMDBSWA.Api.Controllers
             Movie movie = new()
             {
                 MovieId = movieId,
+                Overview = searchMovieById.Overview,
                 OriginalTitle = searchMovieById.OriginalTitle,
                 OriginalLanguage = searchMovieById.OriginalLanguage,
+                PosterPath = searchMovieById.PosterPath,
+                BackgroundPath=searchMovieById.BackdropPath,
+                Adult=searchMovieById.Adult,
+                Budget=searchMovieById.Budget,
+                Runtime=searchMovieById.Runtime,
                 ReleaseDate = searchMovieById.ReleaseDate,
             };
             int result = _movieService.Add(movie);
             return result;
         }
         [HttpGet]
-        public IActionResult Get()
+        public IActionResult GetAll()
         {
             var result = _movieService.GetAll();
+            return Ok(result);
+        }
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+            bool result = _movieService.Delete(new() { Id = id });
             return Ok(result);
         }
     }

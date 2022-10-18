@@ -14,7 +14,6 @@
     <Folder Include="Request\FavoriteList\" />
     <Folder Include="Request\LikedList\" />
     <Folder Include="Request\CommentedList\" />
-    <Folder Include="Request\TvSeries\" />
   </ItemGroup>
 
 </Project>
