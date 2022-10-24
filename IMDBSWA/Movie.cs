@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TMDbLib.Objects.General;
-
+using TMDbLib.Objects.Lists;
 
 namespace IMDBSWA.Entities
 {
@@ -22,7 +22,7 @@ namespace IMDBSWA.Entities
         public string BackgroundPath { get; set; }
         public bool Adult { get; set; }
         public long Budget { get; set; }
-        public int? Runtime { get; set; }
         public DateTime? ReleaseDate { get; set; }
-    }
+    }        
 }
+//FİLM VE DİZİLERİN TÜRLERİNİ DE DATABASEDEN ÇEK TÜRLERİNİ DE ÇAĞIR TŞK

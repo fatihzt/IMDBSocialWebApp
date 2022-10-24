@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IMDBSWA.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,6 +17,11 @@ namespace IMDBSWA.Business.Request.TvSeries
         public string PosterPath { get; set; }
         public string BackgroundPath { get; set; }
         public DateTime? FirstAirDate { get; set; }
+        public DateTime? LastAirDate { get; set; }
+        public string HomepageLink { get; set; }
+        public int NumberofEpisodes { get; set; }
+        public int NumberofSeasons { get; set; }
+        public string Type { get; set; }
         public string OriginalLanguage { get; set; }
     }
 }

@@ -70,7 +70,6 @@ namespace IMDBSWA.Api.Controllers
                 BackgroundPath=searchMovieById.BackdropPath,
                 Adult=searchMovieById.Adult,
                 Budget=searchMovieById.Budget,
-                Runtime=searchMovieById.Runtime,
                 ReleaseDate = searchMovieById.ReleaseDate,
             };
             int result = _movieService.Add(movie);

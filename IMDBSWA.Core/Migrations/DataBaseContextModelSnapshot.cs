@@ -140,9 +140,6 @@ namespace IMDBSWA.Core.Migrations
                     b.Property<DateTime?>("ReleaseDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("Runtime")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
 
                     b.ToTable("Movie");
@@ -163,9 +160,18 @@ namespace IMDBSWA.Core.Migrations
                     b.Property<DateTime?>("FirstAirDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<DateTime?>("LastAirDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("NumberofEpisodes")
+                        .HasColumnType("int");
+
+                    b.Property<int>("NumberofSeasons")
+                        .HasColumnType("int");
 
                     b.Property<string>("OriginTitle")
                         .HasColumnType("nvarchar(max)");
@@ -210,6 +216,10 @@ namespace IMDBSWA.Core.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Mail")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NickName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

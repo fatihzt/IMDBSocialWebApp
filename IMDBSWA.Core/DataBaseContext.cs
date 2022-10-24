@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -21,6 +22,5 @@ namespace IMDBSWA.Core
         public DbSet<FavoriteList> FavoriteList { get; set; }
         public DbSet<LikedList> LikedList { get; set; }
         public DbSet<CommentedList> CommentedList { get; set; }
-
     }
 }

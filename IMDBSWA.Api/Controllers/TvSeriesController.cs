@@ -32,6 +32,9 @@ namespace IMDBSWA.Api.Controllers
                 BackgroundPath = searchTvseriesById.BackdropPath,
                 FirstAirDate = searchTvseriesById.FirstAirDate,
                 OriginalLanguage = searchTvseriesById.OriginalLanguage,
+                NumberofEpisodes=searchTvseriesById.NumberOfEpisodes,
+                NumberofSeasons=searchTvseriesById.NumberOfSeasons,
+                LastAirDate=searchTvseriesById.LastAirDate,
             };
             int result = _tvSeriesService.Add(tvSeries);
             return result;
@@ -48,5 +51,6 @@ namespace IMDBSWA.Api.Controllers
             bool result = _tvSeriesService.Delete(new() { Id = id });
             return Ok(result);
         }
+
     }
 }

@@ -4,18 +4,18 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Net.WebSockets;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace IMDBSWA.Core.EntityFramework
 {
-    public class EfEntityRepositoryBase<TEntity, TContext> : IEntityRepository<TEntity> where TEntity : class, new()
+    public class EfEntityRepositoryBase<TEntity, TContext> : IEntityRepository<TEntity>
+        where TEntity : class, new()
         where TContext : DbContext, new()
     {
         public int Add(TEntity entity)
         {
-            using(TContext dbcontext = new TContext())
+            using (TContext dbcontext=new TContext())
             {
                 var addedEntity = dbcontext.Entry(entity);
                 addedEntity.State = EntityState.Added;
@@ -25,7 +25,7 @@ namespace IMDBSWA.Core.EntityFramework
 
         public bool Delete(TEntity entity)
         {
-            using (TContext dbcontext=new TContext())
+            using (TContext dbcontext = new TContext())
             {
                 var deletedEntity = dbcontext.Entry(entity);
                 deletedEntity.State = EntityState.Deleted;
@@ -36,12 +36,17 @@ namespace IMDBSWA.Core.EntityFramework
 
         public TEntity Get(Expression<Func<TEntity, bool>> filter = null, Func<IQueryable<TEntity>, IIncludableQueryable<TEntity, object>> includesPath = null)
         {
-            using(TContext dbcontext=new TContext())
+            using (TContext dbcontext = new TContext())
             {
                 var query = dbcontext.Set<TEntity>().AsQueryable();
+
+                //filtre yoksa herşeyi getir eğer filtre varsa filtreye göre getir.
                 if (filter != null) query = query.Where(filter);
+
                 if (includesPath != null) query = includesPath(query);
+
                 return query.FirstOrDefault();
+                //return dbcontext.Set<TEntity>().Find(filter,includesPath);
             }
         }
 
@@ -50,15 +55,19 @@ namespace IMDBSWA.Core.EntityFramework
             using (TContext dbcontext = new TContext())
             {
                 var query = dbcontext.Set<TEntity>().AsQueryable();
+
+                //filtre yoksa herşeyi getir eğer filtre varsa filtreye göre getir.
                 if (filter != null) query = query.Where(filter);
+
                 if (includesPath != null) query = includesPath(query);
+
                 return query.ToList();
             }
         }
 
         public bool Update(TEntity entity)
         {
-            using(TContext dbcontext=new TContext())
+            using (TContext dbcontext = new TContext())
             {
                 var updatedEntity = dbcontext.Entry(entity);
                 updatedEntity.State = EntityState.Modified;

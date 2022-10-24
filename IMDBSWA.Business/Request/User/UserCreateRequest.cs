@@ -9,7 +9,10 @@ namespace IMDBSWA.Business.Request.User
 {
     public class UserCreateRequest
     {
-        public string FullName { get; set; }
+        public string FirstName { get; set; }
+        public string SecondName { get; set; }
+        public string NickName { get; set; }
+        public string Password { get; set; }
         public string Age { get; set; }
         public string Mail { get; set; }
         public string TelNo { get; set; }

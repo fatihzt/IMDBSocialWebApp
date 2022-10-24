@@ -27,22 +27,22 @@ namespace IMDBSWA.Business.Concrete
 
         public bool Delete(User entity)
         {
-            throw new NotImplementedException();
+            return _user.Delete(entity);
         }
 
         public User Get(Expression<Func<User, bool>> filter = null, Func<IQueryable<User>, IIncludableQueryable<User, object>> includesPath = null)
         {
-            throw new NotImplementedException();
+            return _user.Get(filter, includesPath);
         }
 
         public List<User> GetAll(Expression<Func<User, bool>> filter = null, Func<IQueryable<User>, IIncludableQueryable<User, object>> includesPath = null)
         {
-            throw new NotImplementedException();
+            return _user.GetAll(filter, includesPath);
         }
 
         public bool Update(User entity)
         {
-            throw new NotImplementedException();
+            return _user.Update(entity);
         }
     }
 }

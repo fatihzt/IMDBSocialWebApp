@@ -20,7 +20,11 @@ namespace IMDBSWA.Entities
         public string PosterPath { get; set; }
         public string BackgroundPath { get; set; }
         public DateTime? FirstAirDate { get; set; }
+        public DateTime? LastAirDate { get; set; }
+        public int NumberofEpisodes { get; set; }
+        public int NumberofSeasons { get; set; }
         public string OriginalLanguage { get; set; }
+
 
     }
 }

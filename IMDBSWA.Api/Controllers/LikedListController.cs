@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using IMDBSWA.Business.Abstract;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace IMDBSWA.Api.Controllers
@@ -7,5 +8,11 @@ namespace IMDBSWA.Api.Controllers
     [ApiController]
     public class LikedListController : ControllerBase
     {
+        private readonly ILikedListService _likedListService;
+        public LikedListController(ILikedListService likedListService)
+        {
+            _likedListService = likedListService;
+        }
+
     }
 }
